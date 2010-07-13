@@ -35,7 +35,7 @@ class PagesController < ApplicationController
       @note = "Jeff's chipcount not listed...stay tuned!"
     end
     @commentary = []
-    @commentary[0] = "NOTES ON JEFF: Jeff started the day with 129,900.  There probably won't be many updates today."
-    @commentary[1] ="See the following note for a short explanation."
+    @commentary[0] = "NOTES ON JEFF: With 1001 people left, Jeff reports that he was down to 70k, but now is back to about 120,000"
+    @commentary[1] ="There is a short break, then another hour of this level."
   end
 end
