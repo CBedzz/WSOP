@@ -35,7 +35,7 @@ class PagesController < ApplicationController
       @note = "Jeff's chipcount not listed...stay tuned!"
     end
     @commentary = []
-    @commentary[0] = "NOTES ON JEFF:  Jeff ended day 3 with about 130,000 chips, plenty to kick some butt on day 4!"
-    @commentary[1] = "                Day 4 starts at noon Pacific Time."
+    @commentary[0] = "NOTES ON JEFF: Day 4 starts at noon Pacific Time.  With about 1200 players left, and 747 getting paid,"
+    @commentary[1] = "today will probably be a push to the money (747th gets $19,263). CHARGE!"
   end
 end
