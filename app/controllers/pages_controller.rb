@@ -1,9 +1,5 @@
 class PagesController < ApplicationController
   def home
-    require 'open-uri'
-    require 'nokogiri'
-
-
     url = 'http://www.pokernews.com/live-reporting/2010-wsop/main-event/chips.htm'
     doc = Nokogiri::HTML.parse(open(url))
 
