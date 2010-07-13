@@ -8,7 +8,7 @@
 <h1>WSOP 2010</h1>
     <%   (0..4).step(1) do |x| %>
      <%= "#{@categories[x]}  #{@info[x]}" -%>
-     <%= "," if x != 4 -%>
+     <%= ", " if x != 4 -%>
     <% end %>
 
     <ol>
