@@ -12,6 +12,12 @@
   <component name="GemRequirementsHolder" version="2">
     <requirement>
       <requirement>
+        <dependency name="eventmachine" version="0" bound="GREATER_OR_EQUAL" git="false" />
+      </requirement>
+      <source from="config/environment.rb" />
+    </requirement>
+    <requirement>
+      <requirement>
         <dependency name="nokogiri" version="0" bound="GREATER_OR_EQUAL" git="false" />
       </requirement>
       <source from="config/environment.rb" />
@@ -46,6 +52,7 @@
     <orderEntry type="library" scope="PROVIDED" name="[gem] activeresource (v2.3.8, C:/Ruby19/lib/ruby/gems/1.9.1/gems/activeresource-2.3.8)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] rails (v2.3.8, C:/Ruby19/lib/ruby/gems/1.9.1/gems/rails-2.3.8)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] nokogiri (v1.4.1, C:/Ruby19/lib/ruby/gems/1.9.1/gems/nokogiri-1.4.1-x86-mingw32)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] eventmachine (v0.12.10, C:/Ruby19/lib/ruby/gems/1.9.1/gems/eventmachine-0.12.10)" level="application" />
   </component>
 </module>
 

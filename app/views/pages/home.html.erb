@@ -2,14 +2,14 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title>WSOP 2010 App | Home</title>
+<title>How's Jeff Doing?</title>
 </head>
 <body>
-<h1>WSOP 2010</h1>
-    <%   (0..4).step(1) do |x| %>
-     <%= "#{@categories[x]}  #{@info[x]}" -%>
-     <%= ", " if x != 4 -%>
+<h1>WSOP 2010 -- The Buffalo Jeff Heiberg Watch</h1>
+    <%   (0..5).step(1) do |x| %>
+     <%= "#{@categories[x]}  #{@info[x]}, " -%>
     <% end %>
+    <%= "Average_Stack #{@avg}" %>
 
     <ol>
     <% (0..9).each do |x| %>
@@ -19,7 +19,9 @@
     
     <p><B><%= @note %><B></p>
 
-<B>NOTES ON JEFF:  Jeff ended day 3 with about 130,000 chips, plenty to kick some butt on day 4!
+<B>
+  <p><%= @commentary[0] %></p>
+  <p><%= @commentary[1] %></p>
 </B>
 </body>
 </html>

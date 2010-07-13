@@ -5,11 +5,12 @@ class PagesController < ApplicationController
     url = 'http://www.pokernews.com/live-reporting/2010-wsop/main-event/chips.htm'
     doc = Nokogiri::HTML.parse(open(url))
 
-    @categories = %w[Level Blinds Ante Remaining_Players Total_Entries]
+    @categories = %w[Level Blinds Ante Remaining_Players Total_Entries Average_Stack]
     @info = []
     doc.xpath('//dd//dd').each do |data|
       @info << data.inner_text.to_s
     end
+    @avg = (@info[4].to_f / @info[3].to_f * 30000).to_i
 
     data_array = []
     doc.xpath('//*[(@id = "chipsCountEntries")]//*[contains(concat( " ", @class, " " ), concat( " ", "numeric", " " )) and (((count(preceding-sibling::*) + 1) = 3) and parent::*)] | //*[(@id = "chipsCountEntries")]//td[(((count(preceding-sibling::*) + 1) = 1) and parent::*)]').each do |data|
@@ -32,6 +33,9 @@ class PagesController < ApplicationController
       @note = "#{jeff+1} -- Jeff Heiberg -- #{chips[jeff]}"
     rescue
       @note = "Jeff's chipcount not listed...stay tuned!"
-    end   
+    end
+    @commentary = []
+    @commentary[0] = "NOTES ON JEFF:  Jeff ended day 3 with about 130,000 chips, plenty to kick some butt on day 4!"
+    @commentary[1] = "                Day 4 starts at noon Pacific Time."
   end
 end
