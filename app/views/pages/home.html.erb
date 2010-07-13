@@ -2,11 +2,11 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title>How's Jeff Doing?</title>
+    <title>How's Jeff Doing?</title>
 </head>
 <body>
 <h1>WSOP 2010 -- The Buffalo Jeff Heiberg Watch</h1>
-    <%   (0..5).step(1) do |x| %>
+    <%   (0..4).step(1) do |x| %>
      <%= "#{@categories[x]}  #{@info[x]}, " -%>
     <% end %>
     <%= "Average_Stack #{@avg}" %>
@@ -17,7 +17,7 @@
     <% end %>
     </ol>
     
-    <p><B><%= @note %><B></p>
+    <p><B><%= @note %></B></p>
 
 <B>
   <p><%= @commentary[0] %></p>
