@@ -1,2 +1,25 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>WSOP 2010 App | Home</title>
+</head>
+<body>
+<h1>WSOP 2010</h1>
+    <%   (0..4).step(1) do |x| %>
+     <%= "#{@categories[x]}  #{@info[x]}" -%>
+     <%= "," if x != 4 -%>
+    <% end %>
+
+    <ol>
+    <% (0..9).each do |x| %>
+        <p><%= "#{x+1} -- #{@player[x]} -- #{@chips[x]}" %></p>
+    <% end %>
+    </ol>
+    
+    <B><%= @note %><B>
+
+<B>NOTES ON JEFF:  Jeff ended day 3 with about 130,000 chips, plenty to kick some butt on day 4!
+</B>
+</body>
+</html>
