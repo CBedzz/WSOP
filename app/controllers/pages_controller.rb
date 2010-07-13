@@ -1,3 +1,5 @@
+require 'open-uri'
+
 class PagesController < ApplicationController
   def home
     url = 'http://www.pokernews.com/live-reporting/2010-wsop/main-event/chips.htm'
