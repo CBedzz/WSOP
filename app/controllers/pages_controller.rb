@@ -13,7 +13,7 @@ class PagesController < ApplicationController
     @avg = (@info[4].to_f / @info[3].to_f * 30000).to_i
 
     data_array = []
-    doc.xpath('//*[(@id = "chipsCountEntries")]//*[contains(concat( " ", @class, " " ), concat( " ", "numeric", " " )) and (((count(preceding-sibling::*) + 1) = 3) and parent::*)] | //*[(@id = "chipsCountEntries")]//td[(((count(preceding-sibling::*) + 1) = 1) and parent::*)]').each do |data|
+    doc.xpath('//*[contains(concat( " ", @class, " " ), concat( " ", "numeric", " " )) and (((count(preceding-sibling::*) + 1) = 3) and parent::*)] | //*[(@id = "chipsCountEntries")]//td[(((count(preceding-sibling::*) + 1) = 1) and parent::*)]').each do |data|
       data_array << data.inner_text.strip
     end
 
@@ -30,7 +30,7 @@ class PagesController < ApplicationController
 
     jeff = @player.index("Jeff Heiberg")
     begin
-      @note = "#{jeff+1} -- Jeff Heiberg -- #{chips[jeff]}"
+      @note = "#{jeff+1} -- Jeff Heiberg -- #{@chips[jeff]}"
     rescue
       @note = "Jeff's chipcount not listed...stay tuned!"
     end
