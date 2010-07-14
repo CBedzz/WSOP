@@ -32,10 +32,10 @@ class PagesController < ApplicationController
     begin
       @note = "#{jeff+1} -- Jeff Heiberg -- #{@chips[jeff]}"
     rescue
-      @note = "Jeff's chipcount not listed...stay tuned!"
+      @note = "Jeff's chipstack is, unfortunately, ZERO, grrrrr!"
     end
     @commentary = []
-    @commentary[0] = "NOTES ON JEFF: About 80 people til the money, with all-ins across the room."
-    @commentary[1] = "Jeff is up from his 90k to about 105k right now.  No bubbling!"
+    @commentary[0] = "NOTES ON JEFF: With 774ish left, Buffalo Jeff has left the building.  RATS!"
+    @commentary[1] = "Will post details of his demise when I learn more.  Nice job anyway Jeffrey."
   end
 end
