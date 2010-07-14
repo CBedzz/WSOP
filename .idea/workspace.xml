@@ -27,7 +27,7 @@
       <file leaf-file-name="pages_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/pages_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="119" selection-start="1339" selection-end="1339" vertical-scroll-proportion="0.7810219">
+            <state line="38" column="84" selection-start="1403" selection-end="1403" vertical-scroll-proportion="0.80839413">
               <folding />
             </state>
           </provider>
@@ -534,7 +534,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/pages_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="119" selection-start="1339" selection-end="1339" vertical-scroll-proportion="0.7810219">
+        <state line="38" column="84" selection-start="1403" selection-end="1403" vertical-scroll-proportion="0.80839413">
           <folding />
         </state>
       </provider>

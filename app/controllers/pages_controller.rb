@@ -35,7 +35,7 @@ class PagesController < ApplicationController
       @note = "Jeff's chipcount not listed...stay tuned!"
     end
     @commentary = []
-    @commentary[0] = "NOTES ON JEFF: About 90 people til the money, and they're on a break until about 5:00 Vegas time."
-    @commentary[1] = "Jeff just checked in and has about 90,000. Time to go get some chips!"
+    @commentary[0] = "NOTES ON JEFF: About 80 people til the money, with all-ins across the room."
+    @commentary[1] = "Jeff is up from his 90k to about 105k right now.  No bubbling!"
   end
 end
