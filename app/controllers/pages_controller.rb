@@ -28,14 +28,7 @@ class PagesController < ApplicationController
       player_count +=1
     end
 
-    jeff = @player.index("Jeff Heiberg")
-    begin
-      @note = "#{jeff+1} -- Jeff Heiberg -- #{@chips[jeff]}"
-    rescue
-      @note = "Jeff's chipstack is, unfortunately, ZERO, grrrrr!"
-    end
     @commentary = []
-    @commentary[0] = "NOTES ON JEFF: With 774ish left, Buffalo Jeff has left the building.  RATS!"
-    @commentary[1] = "Will post details of his demise when I learn more.  Nice job anyway Jeffrey."
+    @commentary[0] = "A quick look at what's going on at the WSOP main event 2010"
   end
 end
